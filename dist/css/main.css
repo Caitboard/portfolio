@@ -20,6 +20,47 @@
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
 
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.95;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu-branding, .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background: #373737;
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    background: #444;
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-branding .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("../img/linkedinmini.png");
+      border-radius: 50%;
+      border: solid 3px #2E8D36; }
+  .menu .nav-item {
+    transform: translate3d(600px, 0, 0); }
+
 * {
   box-sizing: border-box; }
 
@@ -31,7 +72,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url("../img/lightning-strike-over-a-town.jpeg");
+    background: url("../img/bg.jpg");
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -64,7 +105,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #8a5cff; }
+  color: #2E8D36; }
 
 main {
   padding: 4rem;
@@ -74,7 +115,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #8a5cff;
+        color: #2E8D36;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
