@@ -4,7 +4,7 @@ $primary-color: #444;
 $secondary-color: #2abb9b;
 $show-home-image: true;
 $home-image: url('../img/bg.jpg');
-$background-opacity: 0.7;
+$background-opacity: 0.75;
 
 // Functie genaamd EaseOut om een kleur fade te maken
 @mixin easeOut() {
@@ -30,5 +30,27 @@ $background-opacity: 0.7;
                 background: rgba($primary-color, $background-opacity);
             }
         }
+    }
+}
+
+// Media queries
+@mixin mediaSm {
+    @media screen and (max-width:500px) {
+        @content;
+    }
+}
+@mixin mediaMd {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width:1380px) {
+        @content;
+    }
+}
+@mixin mediaXl {
+    @media screen and (min-width:1381px) {
+        @content;
     }
 }
