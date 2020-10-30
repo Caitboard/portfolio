@@ -135,6 +135,40 @@ main {
         }
     }
 }
+// EINDE WORK PAGE
+
+// CONTACT PAGE
+
+.boxes {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    div {
+        font-size: 1.5rem;
+        border: 3px $secondary-color solid;
+        padding: 1rem 2rem;
+        width: 50%;
+        margin-bottom: 3rem;
+        @include easeOut;
+        span {
+            font-weight: 600;
+        }
+
+        &:hover {
+            padding: 0.5rem 1.5rem;
+            border: 3px #fff solid;
+            background: $secondary-color;
+            color: #333;
+            font-weight: 600;
+            span {
+                color: #333;
+                
+                
+            }
+        }
+    }
+}
 
 // Button styles
 .btn {
@@ -160,6 +194,7 @@ main {
     background: lighten($primary-color, 50);
     color: #333;
 }
+
 
 #main-footer {
     text-align: center;
