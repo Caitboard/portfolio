@@ -52,6 +52,17 @@
             border: solid 3px $secondary-color;
         }
     }
+
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+
+        grid-template-columns: 1fr;
+    }
 }
 
 // Smartphones
