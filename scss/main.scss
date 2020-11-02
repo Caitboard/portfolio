@@ -134,6 +134,16 @@ main {
             @include easeOut;
         }
     }
+    .item {
+        &-description {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 3px #fff solid;
+            a {
+                font-weight: 700;
+            }
+        }
+    }
 }
 // EINDE WORK PAGE
 
