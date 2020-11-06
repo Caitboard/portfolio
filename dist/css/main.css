@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap");
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -97,7 +98,7 @@ body {
   color: white;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url("../img/bg.jpg");
