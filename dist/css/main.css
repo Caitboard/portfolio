@@ -189,7 +189,8 @@ main {
   .projects .item-description {
     margin: 1rem 0;
     padding: 1rem;
-    border: 3px #fff solid; }
+    border: 3px #fff solid;
+    height: 45%; }
     .projects .item-description a {
       font-weight: 700; }
 
