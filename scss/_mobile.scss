@@ -73,6 +73,9 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+    .boxes div{
+        width:100%;
+    }
 }
 
 // Smartphones
@@ -86,12 +89,18 @@
       
           .lg-heading {
             margin-top:1rem;
-            font-size: 5rem;
+            font-size: 3rem;
           }
         }
       
         .projects {
           grid-template-columns: 1fr;
         }
+
+        .boxes div{
+            width:100%;
+        }
       }
+
+      
 }
