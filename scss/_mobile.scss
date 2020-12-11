@@ -13,7 +13,14 @@
 
     .projects {
         grid-template-columns: repeat(3, 1fr);
+
+        .item {
+            .centered-text {
+                font-size: 1.8rem;
+            }
+        }
     }
+
 }
 
 // Tablets
@@ -72,6 +79,12 @@
 
     .projects {
         grid-template-columns: repeat(2, 1fr);
+        .item {
+
+            .centered-text {
+                font-size: 1.5rem;
+            }
+        }
     }
     .boxes div{
         width:100%;

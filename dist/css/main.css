@@ -179,11 +179,22 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem; }
+  .projects .item {
+    position: relative;
+    text-align: center; }
+    .projects .item .centered-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5rem;
+      font-weight: 400; }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 3px #fff solid;
+    opacity: 0.75; }
     .projects img:hover {
-      opacity: 0.5;
+      opacity: 0.3;
       border-color: #2abb9b;
       transition: all 0.5s ease-out; }
   .projects .item-description {
@@ -247,7 +258,9 @@ main {
   ul.menu-nav {
     background: #2abb9b; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+    .projects .item .centered-text {
+      font-size: 1.8rem; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -282,6 +295,8 @@ main {
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
+    .projects .item .centered-text {
+      font-size: 1.5rem; }
   .boxes div {
     width: 100%; } }
 
